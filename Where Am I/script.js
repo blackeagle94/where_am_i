@@ -27,5 +27,19 @@ const whereAmI = function (lat, lng) {
   .catch(err => console.log(err))
 };
 
+///adding google map marker///
+function initMap () {
+  let options = {
+    zoom: 8,
+    center: {lat: 37.9838, lng:23.7275}
+  }
+  
+  var map = new google.maps.Map(document.getElementById('map'), options)
+
+  //add marker
+  let marker = new google.maps.Marker({
+    position: {lat: latitudeInput.value, lng: }
+  })
+}
 
 btn.addEventListener("click", displayCountry);
