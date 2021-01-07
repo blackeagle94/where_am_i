@@ -47,4 +47,3 @@ function initMap () {
 }
 
 btn.addEventListener("click", displayCountry);
-btn.addEventListener('click', initMap)
